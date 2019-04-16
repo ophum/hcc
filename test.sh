@@ -17,9 +17,15 @@ try() {
   fi
 }
 
+# step 1
 try 0 0
 try 42 42
 
+# step 2
 try 21 '5+20-4'
+
+# step 3
+try 41 " 12 + 34 - 5 "
+
 
 echo OK
